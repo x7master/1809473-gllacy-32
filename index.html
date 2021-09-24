@@ -10,20 +10,51 @@
     <input class="visually-hidden" type="radio" id="product-3" name="toggle">
     <header>
       <div class="content-container">
-        <a href="index.html" class="logo">
+        <a class="logo" href="index.html">
           <img src="https://via.placeholder.com/137x56" alt="Логотип магазина Glacy" width="137" height="56">
         </a>
         <nav class="main-nav">
           <ul class="nav-site">
-              <li class="site-item"><a href="catalog.html" class="site-link">Каталог</a></li>
-              <li class="site-item"><a href="#" class="site-link">Доставка и оплата</a></li>
-              <li class="site-item"><a href="#" class="site-link">О компании</a></li>
+              <li class="site-item">
+                <a class="site-link" href="catalog.html" >Каталог</a>
+                <ul class="sub-menu">
+                  <li class="sub-item">
+                    <a class="sub-link" href="#">Новинки</a>
+                  </li>
+                  <li class="sub-item">
+                    <a class="sub-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="sub-item">
+                    <a class="sub-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="sub-item">
+                    <a class="sub-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="sub-item">
+                    <a class="sub-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="site-item">
+                <a class="site-link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="site-item">
+                <a class="site-link" href="#">О компании</a>
+              </li>
           </ul>
           <ul class="nav-user">
-            <li class="user-item"><a class="user-phone" href="tel:+78005558628">+7 800 555-86-28</a></li>
-            <li class="user-item"><a class="user-search" href="#"><span class="visually-hidden">Поиск</span></a></li>
-            <li class="user-item"><a class="user-login" href="#">Вход</a></li>
-            <li class="user-item"><a class="user-cart" href="#">Пусто</a></li>
+            <li class="user-item">
+              <a class="user-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+            </li>
+            <li class="user-item">
+              <a class="user-search" href="#"><span class="visually-hidden">Поиск</span></a>
+            </li>
+            <li class="user-item">
+              <a class="user-login" href="#">Вход</a>
+            </li>
+            <li class="user-item">
+              <a class="user-cart" href="#">Пусто</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -68,27 +99,21 @@
           </div>
           <div class="slider-nav">
             <button class="slider-button previous" type="button">
-                <img src="https://via.placeholder.com/6x11" alt="Стрелка влево" width="6" height="11">
+              <span class="visually-hidden">Предыдущий товар</span>
             </button>
             <button class="slider-button next" type="button">
-                <img src="https://via.placeholder.com/6x11" alt="Стрелка вправо" width="6" height="11">
+              <span class="visually-hidden">Следующий товар</span>
             </button>
           </div>
           <ul class="social-list">
             <li class="social-item">
-                <a href="#" class="social-link">
-                    <img src="https://via.placeholder.com/24x24" alt="Иконка vkontakte" width="24" height="24">
-                </a>
+                <a href="#" class="social-link"><img src="https://via.placeholder.com/24x24" alt="Иконка vkontakte" width="24" height="24"></a>
             </li>
             <li class="social-item">
-                <a href="#" class="social-link">
-                    <img src="https://via.placeholder.com/24x24" alt="Иконка facebook" width="24" height="24">
-                </a>
+                <a href="#" class="social-link"><img src="https://via.placeholder.com/24x24" alt="Иконка facebook" width="24" height="24"></a>
             </li>
             <li class="social-item">
-                <a href="#" class="social-link">
-                    <img src="https://via.placeholder.com/24x24" alt="Иконка instagram" width="24" height="24">
-                </a>
+                <a href="#" class="social-link"><img src="https://via.placeholder.com/24x24" alt="Иконка instagram" width="24" height="24"></a>
             </li>
           </ul>
         </div>
@@ -118,37 +143,29 @@
               <img src="https://via.placeholder.com/168x168" alt="Малиновой мороженое" width="168" height="168">
               <h3 class="popular-item-header">Малинка</h3>
               <p class="popular-item-description">Сливочное мороженое с малиновым джемом</p>
-              <span class="popular-price">310 ₽/кг</span>
-              <button class="popular-button add-to-cart" type="button">
-                <img src="https://via.placeholder.com/32x32" alt="В корзину" width="32" height="32">
-              </button>
+              <b class="popular-price">310 ₽/кг</b>
+              <a class="popular-button add-to-cart" href="#"><span class="visually-hidden">В корзину</span></a>
             </li>
             <li class="popular-item">
               <img src="https://via.placeholder.com/168x168" alt="Фисташковое мороженое" width="168" height="168">
               <h3 class="popular-item-header">Фисташка</h3>
               <p class="popular-item-description">Фисташковый пломбир с кусочками шоколада</p>
-              <span class="popular-price">340 ₽/кг</span>
-              <button class="popular-button add-to-cart" type="button">
-                <img src="https://via.placeholder.com/32x32" alt="В корзину" width="32" height="32">
-              </button>
+              <b class="popular-price">340 ₽/кг</b>
+              <a class="popular-button add-to-cart" href="#"><span class="visually-hidden">В корзину</span></a>
             </li>
             <li class="popular-item">
               <img src="https://via.placeholder.com/168x168" alt="Черничное мороженое" width="168" height="168">
               <h3 class="popular-item-header">Черника</h3>
               <p class="popular-item-description">Крем-брюле с черничным джемом</p>
-              <span class="popular-price">330 ₽/кг</span>
-              <button class="popular-button add-to-cart" type="button">
-                <img src="https://via.placeholder.com/32x32" alt="В корзину" width="32" height="32">
-              </button>
+              <b class="popular-price">330 ₽/кг</b>
+              <a class="popular-button add-to-cart" href="#"><span class="visually-hidden">В корзину</span></a>
             </li>
             <li class="popular-item">
               <img src="https://via.placeholder.com/168x168" alt="Мороженое бабл-гам" width="168" height="168">
               <h3 class="popular-item-header">Бабл-гам</h3>
               <p class="popular-item-description">Ванильный пломбир со сладкой посыпкой</p>
-              <span class="popular-price">320 ₽/кг</span>
-              <button class="popular-button add-to-cart" type="button">
-                <img src="https://via.placeholder.com/32x32" alt="В корзину" width="32" height="32">
-              </button>
+              <b class="popular-price">320 ₽/кг</b>
+              <a class="popular-button add-to-cart" href="#"><span class="visually-hidden">В корзину</span></a>
             </li>
           </ul>
         </div>
@@ -176,32 +193,119 @@
         </div>
       </section>
 
-      <section class="blog">
+
         <div class="content-container">
           <article class="blog-item">
+            <h2 class="visually-hidden">Блог</h2>
             <p class="blog-text">Новое в нашем блоге</p>
-            <h3 class="blog-header">10 способов сервировки фруктовых щербетов к столу"</h3>
+            <h3 class="blog-header">10 способов сервировки фруктовых щербетов к столу</h3>
           </article>
-
-
+          <section class="subscription">
+            <h2 class="visually-hidden">Сладкая рассылка</h2>
+            <div class="subscription-container">
+              <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="subscription-email">
+                  <label class="visually-hidden" for="subscription-email">Email</label>
+                  <input class="field"  placeholder="email@example.com" type="email" name="subscription-email" id="subscription-email" required>
+                </p>
+                <button class="button subscription-button" type="submit">
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </section>
         </div>
-      </section>
+
 
       <section class="delievery">
         <div class="content-container">
-
+          <h2 class="delievery-header">Доставка любимого мороженого на дом</h2>
+          <p class="delievery-text">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
+        <form class="delievery-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p  class="delievery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="delievery-form-date">
+            <span class="form-label form-label-icon">
+              <label for="delievery-date">Дата</label>
+              <button class="info" type="button">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              </button>
+            </span>
+            <input type="text" id="delievery-date" name="delievery-date" placeholder="01.04.2020">
+          </p>
+          <p class="delievery-form-phone">
+            <label for="delievery-phone">Телефон</label>
+            <input type="text" id="delievery-phone" name="delievery-phone" placeholder="+7 800 999-00-00">
+          </p>
+          <p class="delievery-form-address">
+            <span class="form-label form-label-icon">
+              <label for="delievery-address">Адрес</label>
+              <button class="info" type="button">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              </button>
+            </span>
+            <input type="text" id="delievery-address" name="delievery-address" placeholder="ул. Большая Конюшенная, 19/8">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
         </div>
       </section>
 
       <section class="contacts">
         <div class="content-container">
-
+          <div class="contacts-container">
+            <h2 class="visually-hidden">Контакты</h2>
+            <dl>
+                <dt>Адрес главного офиса и офлайн-магазина:</dt>
+                <dd class="contacts-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</dd>
+                <dt>Для заказов по телефону:</dt>
+                <dd><a class="contacts-phone" href="+7 (812) 812-12-12">+7 (812) 812-12-12</a><span class="contacts-work-time">(с 10 до 20 ежедневно)</span></dd>
+            </dl>
+            <button class="button contacts-button" type="button">Отправить</button>
+          </div>
         </div>
       </section>
 
     </main>
 
     <footer>
+      <div class="content-container">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Соцсети</h2>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="#"><img src="https://via.placeholder.com/24x24" alt="Иконка vkontakte" width="24" height="24"></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#"><img src="https://via.placeholder.com/24x24" alt="Иконка facebook" width="24" height="24"></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#"><img src="https://via.placeholder.com/24x24" alt="Иконка instagram" width="24" height="24"></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-menu">
+          <h2 class="visually-hidden">Дополнительная информация</h2>
+          <ul class="footer-nav">
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">Для поставщиков</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">Наши документы</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">О производстве</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">Экологические стандарты</a>
+            </li>
+          </ul>
+        </section>
+        <section class="copyright">
+          <a class="htmlacademy-img-link" href="https://htmlacademy.ru/"><img src="https://via.placeholder.com/93x27" alt=".html academy"></a>
+          <p class="copyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+        </section>
+      </div>
 
     </footer>
 
