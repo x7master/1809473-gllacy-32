@@ -94,10 +94,13 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цена: </legend>
             <label class="catalog-filter-label">
+              <span class="visually-hidden">от</span>
               <input class="catalog-filter-input" type="number" name="min-price"> ₽
             </label>
             <label class="catalog-filter-label">
-              - <input class="catalog-filter-input" type="number" name="max-price"> ₽
+              <span class="catalog-price-separator"> - </span>
+              <span class="visually-hidden">до</span>
+              <input class="catalog-filter-input" type="number" name="max-price"> ₽
             </label>
             <button class="range-toggle toggle-min" type="button">
               <span class="visually-hidden">Изменить минимальную цену.</span>
