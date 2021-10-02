@@ -1,3 +1,20 @@
 body {
   background-color: #FEAFC3;
 }
+
+.features {
+  background: #FCFCFC url("../img/waffle-background.jpg") no-repeat;
+  border-radius: 16px;
+}
+
+.blog-item {
+  background: #FCFCFC url("../img/blog-background.jpg") no-repeat;
+}
+
+.subscription {
+  background: #FCFCFC url("../img/post-background.jpg") no-repeat;
+}
+
+.delievery {
+  background: #FCFCFC url("../img/delievery-background.jpg") no-repeat;
+}
