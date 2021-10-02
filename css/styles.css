@@ -197,6 +197,7 @@ body {
 
 .features {
   background-image: url("../img/waffle-background.jpg");
+  background-repeat: no-repeat;
   border-radius: 16px;
 }
 
