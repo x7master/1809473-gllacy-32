@@ -132,6 +132,7 @@ body {
   text-decoration: none;
   color: #2d3440;
   background-color: #ffcbd8;
+  background-repeat: no-repeat;
 }
 
 .user-item:last-child .user-link {
@@ -141,25 +142,21 @@ body {
 .user-search {
   padding: 16px;
   background-image: url("../img/search-icon.svg");
-  background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .user-login {
   background-image: url("../img/log-in-icon.svg");
-  background-repeat: no-repeat;
   background-position: calc(50% - 18px) 50%;
 }
 
 .user-cart {
   background-image: url("../img/cart-icon-black.svg");
-  background-repeat: no-repeat;
   background-position: calc(50% - 24px) 50%;
 }
 
 .user-cart-full {
   background-image: url("../img/full-cart-icon-black.svg");
-  background-repeat: no-repeat;
   background-position: calc(50% - 34px) 50%;
 }
 
