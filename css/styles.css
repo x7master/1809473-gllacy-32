@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -75,10 +83,26 @@ body {
 }
 
 .page-header {
+  display: flex;
+  align-items: center;
   line-height: 20px;
 }
 
+.logo {
+  padding: 22px 0;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
 .nav-site {
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  width: 540px;
   list-style: none;
 }
 
@@ -88,6 +112,7 @@ body {
 }
 
 .sub-menu {
+  display: none;
   list-style: none;
 }
 
@@ -113,12 +138,18 @@ body {
 }
 
 .user-phone {
+  display: block;
+  margin-left: auto;
+  margin-right: 16px;
   font-weight: 700;
   color: #2D3440;
   text-decoration: none;
 }
 
 .nav-user {
+  margin: 0;
+  padding: 0;
+  width: 260px;
   font-size: 14px;
   line-height: 20px;
   list-style: none;
