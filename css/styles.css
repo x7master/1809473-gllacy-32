@@ -74,6 +74,10 @@ body {
   border-radius: 4px;
 }
 
+.field::placeholder {
+  color: #b9b9b9;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -205,6 +209,8 @@ body {
 }
 
 .slider {
+  padding-top: 21px;
+  padding-bottom: 26px;
   margin-bottom: 80px;
   position: relative;
   display: flex;
@@ -212,6 +218,7 @@ body {
 }
 
 .slider-text-block {
+  margin-right: 21px;
   padding-left: 70px;
   width: 470px;
 }
@@ -244,6 +251,35 @@ body {
   align-items: center;
 }
 
+.image-item-current::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 100px;
+  width: 312px;
+  height: 312px;
+  border-radius: 50%;
+  background-color: #ffcbd8;
+}
+
+.slider-image-item:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 25px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffcbd8;
+  opacity: 0.4;
+}
+
+.slider-image-item:not(:first-child) {
+  display: flex;
+  justify-content: center;
+}
+
 .slider-text {
   margin: 0;
   margin-bottom: 44px;
@@ -254,6 +290,7 @@ body {
 }
 
 .slider-image-item {
+  position: relative;
   width: 100px;
   margin-right: 41px;
 }
@@ -263,7 +300,12 @@ body {
 }
 
 .image-item-current {
+  margin-right: 63px;
   width: 306px;
+}
+
+.slider-image {
+  position: relative;
 }
 
 .slider-pagination {
@@ -299,8 +341,28 @@ body {
   opacity: 1;
 }
 
-.slider-nav {
+.slider-button {
   position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #fcfcfc;
+  background-color: rgba(252, 252, 252, 0.3);
+  background-repeat: no-repeat;
+}
+
+.slider-button.previous {
+  top: 258px;
+  left: 543px;
+  background-image: url("../img/arrow-left-icon.svg");
+  background-position: calc(50% - 2px) 50%;
+}
+
+.slider-button.next {
+  top: 258px;
+  right: 277px;
+  background-image: url("../img/arrow-right-icon.svg");
+  background-position: 50% 50%;
 }
 
 .slider .social-list {
@@ -674,6 +736,16 @@ body {
   color: #2d3440;
 }
 
+.delievery-form-date .delievery-label::after {
+  content: "";
+  display: inline-block;
+  margin-left: 4px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/info-icon.svg");
+  background-repeat: no-repeat;
+}
+
 .delievery-form-date {
   display: inline-block;
   margin: 0;
@@ -693,6 +765,16 @@ body {
   margin: 0;
   margin-bottom: 28px;
   width: 420px;
+}
+
+.delievery-form-address .delievery-label::after {
+  content: "";
+  display: inline-block;
+  margin-left: 4px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/info-icon.svg");
+  background-repeat: no-repeat;
 }
 
 .delievery-form-date .field {
