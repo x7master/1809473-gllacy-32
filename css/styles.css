@@ -264,10 +264,11 @@ body {
 
 .slider-image-item {
   position: relative;
+  display: flex;
+  justify-content: center;
   margin-right: 41px;
   width: 100px;
   transform: scale(0.29);
-  transform-origin: left;
   opacity: 0.4;
 }
 
