@@ -199,13 +199,9 @@ body {
   background-position: calc(50% - 34px) 50%;
 }
 
-.main-index {
-}
-
 .slider {
   padding-top: 21px;
   padding-bottom: 26px;
-  padding-left: 70px;
   margin-bottom: 80px;
   position: relative;
   display: flex;
@@ -234,6 +230,7 @@ body {
 }
 
 .slider-text-item {
+  padding-left: 70px;
   display: none;
 }
 
