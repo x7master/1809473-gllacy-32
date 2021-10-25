@@ -35,6 +35,7 @@ html {
 body {
   margin: 0 auto;
   width: 1170px;
+  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   font-family: "Inter", sans-serif;
