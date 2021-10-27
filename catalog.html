@@ -86,7 +86,7 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <div class="catalog-filter-group">
             <label class="catalog-filter-title" for="sorting">Сортировка:</label>
-            <select class="select-control" id="sorting" name="sorting">
+            <select class="sorting-control" id="sorting" name="sorting">
               <option value="popular">по популярности</option>
               <option value="cheap">по цене</option>
               <option value="new">по новизне</option>
@@ -97,12 +97,12 @@
             <legend class="catalog-filter-title">Цена: </legend>
             <label class="catalog-filter-label">
               <span class="visually-hidden">от</span>
-              <input class="catalog-filter-input" type="number" name="min-price"> ₽
+              <input class="visually-hidden catalog-filter-input" type="number" name="min-price"> ₽
             </label>
             <label class="catalog-filter-label">
               <span class="catalog-price-separator"> - </span>
               <span class="visually-hidden">до</span>
-              <input class="catalog-filter-input" type="number" name="max-price"> ₽
+              <input class="visually-hidden catalog-filter-input" type="number" name="max-price"> ₽
             </label>
             <button class="range-toggle toggle-min" type="button">
               <span class="visually-hidden">Изменить минимальную цену.</span>

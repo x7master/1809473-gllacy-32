@@ -830,8 +830,44 @@ body {
   color: inherit;
 }
 
+.catalog-header {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 32px;
+  margin-bottom: 40px;
+}
+
+.catalog-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2d3440;
+}
+
 .breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
   list-style: none;
+}
+
+.breadcrumbs-item {
+  margin-right: 8px;
+}
+
+.breadcrumbs-item + .breadcrumbs-item::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  background-image: url("../img/chevrons-right.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .breadcrumbs-link {
@@ -841,29 +877,47 @@ body {
   color: #2d3440;
 }
 
-.catalog-title {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-  color: #2d3440;
+.catalog-filter {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 810px;
 }
 
 .catalog-filter-group {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
+  border: none;
 }
 
-.select-control {
+.catalog-filter-title {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.sorting-control {
+  display: block;
+  padding: 8px 16px;
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
+  border: none;
+  border-radius: 20px;
+  background-color: #FFCBD8;
 }
 
 .catalog-filter-list {
+  margin: 0;
+  padding: 8px 16px;
+  display: flex;
   list-style: none;
+  border-radius: 20px;
+  background-color: #FFCBD8;
 }
 
 .catalog-filter-button {
