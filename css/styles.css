@@ -833,6 +833,7 @@ body {
 .catalog-header {
   display: flex;
   flex-direction: column-reverse;
+  align-items: flex-start;
   padding-top: 32px;
   margin-bottom: 40px;
 }
@@ -848,7 +849,6 @@ body {
 
 .breadcrumbs {
   display: flex;
-  align-items: center;
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
@@ -864,21 +864,33 @@ body {
   display: inline-block;
   width: 12px;
   height: 12px;
-  margin-right: 8px;
+  margin-right: 2px;
+  vertical-align: middle;
   background-image: url("../img/chevrons-right.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .breadcrumbs-link {
+  text-decoration: none;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
+  border-bottom: 1px solid #2d3440;
+}
+
+.breadcrumbs-item:last-child .breadcrumbs-link{
+  border-bottom: none;
+}
+
+.catalog-products-filter {
+  margin-bottom: 48px;
 }
 
 .catalog-filter {
   display: flex;
+  align-items: flex-end;
   gap: 16px;
   flex-wrap: wrap;
   width: 810px;
@@ -908,7 +920,7 @@ body {
   color: #2d3440;
   border: none;
   border-radius: 20px;
-  background-color: #FFCBD8;
+  background-color: rgba(252, 252, 252, 0.3);
 }
 
 .catalog-filter-list {
@@ -917,23 +929,42 @@ body {
   display: flex;
   list-style: none;
   border-radius: 20px;
-  background-color: #FFCBD8;
+  background-color: rgba(252, 252, 252, 0.3);
 }
 
 .catalog-filter-button {
-  padding: 6px 52px;
+  padding: 8px 52px;
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
   color: #2d3440;
-  background-color: #ffcbd8;
+  background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #fcfcfc;
   border-radius: 26px;
 }
 
+.main-catalog .product-list {
+  margin-bottom: 53px;
+}
+
+.pagination-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.pagination-container .button {
+  grid-column: 2;
+  justify-self: center;
+}
+
 .pagination {
+  justify-self: right;
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
