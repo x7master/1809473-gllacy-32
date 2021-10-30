@@ -880,7 +880,7 @@ body {
   border-bottom: 1px solid #2d3440;
 }
 
-.breadcrumbs-item:last-child .breadcrumbs-link{
+.breadcrumbs-item:last-child .breadcrumbs-link {
   border-bottom: none;
 }
 
@@ -907,12 +907,13 @@ body {
 
 .catalog-filter-title {
   display: inline-block;
+  padding-left: 16px;
   margin-bottom: 8px;
 }
 
 .sorting-control {
   display: block;
-  padding: 8px 16px;
+  padding: 8px 63px 8px 16px;
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -930,6 +931,16 @@ body {
   list-style: none;
   border-radius: 20px;
   background-color: rgba(252, 252, 252, 0.3);
+}
+
+.catalog-filter-item + .catalog-filter-item {
+  margin-left: 16px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 24px;
 }
 
 .catalog-filter-button {
@@ -968,6 +979,14 @@ body {
   list-style: none;
 }
 
+.pagination-item:first-child {
+  margin-right: 12px;
+}
+
+.pagination-item:last-child {
+  margin-left: 12px;
+}
+
 .pagination-current {
   background-color: #fcfcfc;
   border-radius: 50%;
@@ -976,7 +995,7 @@ body {
 .pagination-link {
   width: 24px;
   height: 24px;
-  display: inline-block;
+  display: block;
   text-align: center;
   line-height: 24px;
   text-decoration: none;
