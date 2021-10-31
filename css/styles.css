@@ -139,6 +139,10 @@ body {
   background-color: #ff4a78;
 }
 
+.site-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
 .sub-promo {
   font-weight: 700;
   border-bottom: 1px solid #b9b9b9;
