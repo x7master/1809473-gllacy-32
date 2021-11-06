@@ -92,6 +92,10 @@ body {
   cursor: pointer;
 }
 
+.button:disabled {
+  font-weight: 400;
+}
+
 .button-white {
   color: var(--basic-extra-dark);
   background-color: var(--basic-extra-light);
@@ -109,7 +113,6 @@ body {
 }
 
 .button-white:disabled {
-  font-weight: 400;
   color: var(--basic-neutral);
   background-color: var(--basic-light);
   outline-color: rgba(252, 252, 252, 0.4);
@@ -134,7 +137,6 @@ body {
 }
 
 .button-red:disabled {
-  font-weight: 400;
   color: var(--basic-dark);
   background-color: var(--basic-neutral);
   outline-color: rgba(185, 185, 185, 0.3);
