@@ -15,24 +15,26 @@
       <nav class="main-nav">
         <ul class="nav-site">
           <li class="site-item">
-            <a class="site-link site-link-current">Каталог</a>
-            <ul class="sub-menu">
-              <li class="sub-item sub-promo">
-                <a class="sub-link" href="#">Новинки</a>
-              </li>
-              <li class="sub-item">
-                <a class="sub-link sub-link-current">Сливочное</a>
-              </li>
-              <li class="sub-item">
-                <a class="sub-link" href="#">Щербеты</a>
-              </li>
-              <li class="sub-item">
-                <a class="sub-link" href="#">Фруктовый лед</a>
-              </li>
-              <li class="sub-item">
-                <a class="sub-link" href="#">Мелорин</a>
-              </li>
-            </ul>
+            <a href="#" class="site-link site-link-current">Каталог</a>
+            <div class="menu-wrapper">
+              <ul class="sub-menu">
+                <li class="sub-item sub-promo">
+                  <a class="sub-link" href="#">Новинки</a>
+                </li>
+                <li class="sub-item">
+                  <a class="sub-link sub-link-current">Сливочное</a>
+                </li>
+                <li class="sub-item">
+                  <a class="sub-link" href="#">Щербеты</a>
+                </li>
+                <li class="sub-item">
+                  <a class="sub-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="sub-item">
+                  <a class="sub-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="site-item">
             <a class="site-link" href="#">Доставка и оплата</a>
@@ -49,15 +51,77 @@
             <a class="user-link user-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
+            <form class="search-form visually-hidden" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+              <input class="field" placeholder="Поиск по сайту" type="text" name="site-search" id="site-search">
+              <label>
+                <svg class="search-clear" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z"/>
+                </svg>
+                <input class="visually-hidden" type="reset" value="Стереть содержимое">
+              </label>
+              <button class="visually-hidden" type="submit">
+                Отправить
+              </button>
+            </form>
           </li>
           <li class="user-item">
             <a class="user-link user-login" href="#">Вход</a>
+            <form class="login-form visually-hidden" action="https://echo.htmlacademy.ru/" method="post">
+              <h2  class="login-title">Личный кабинет</h2>
+              <label class="visually-hidden" for="login-email">Логин</label>
+              <input class="field" placeholder="email@example.com" type="email" name="login-email" id="login-email" required>
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input class="field" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" type="password" name="login-password" id="login-password" required>
+              <div class="login-wrapper">
+                <button class="button button-red" type="submit">Войти</button>
+                <div class="links-wrapper">
+                  <a class="login-link" href="#">Забыли пароль?</a>
+                  <a class="login-link" href="#">Регистрация</a>
+                </div>
+              </div>
+            </form>
           </li>
           <li class="user-item">
             <a class="user-link user-cart-full" href="#">
               <span class="visually-hidden">Корзина </span>
               2 товара
             </a>
+            <div class="cart-popover visually-hidden">
+              <h2 class="cart-title">Корзина</h2>
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <img class="cart-item-image" src="img/raspberry-small.png" alt="Шарик малинового мороженого" width="46" height="46">
+                  <h3 class="cart-item-title">Малинка</h3>
+                  <p class="cart-item-description">1 кг х 310 ₽</p>
+                  <b class="cart-item-price">310 ₽</b>
+                  <button class="cart-item-button" type="button">
+                    <svg width="16" height="16" fill="#2d3440" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z"/>
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <img class="cart-item-image" src="img/bubble-gum-small.png" alt="Шарик мороженого небесного цвета с разноцветной посыпкой" width="46" height="46">
+                  <h3 class="cart-item-title">Бабл-гам</h3>
+                  <p class="cart-item-description">1,5 кг х 320 ₽</p>
+                  <b class="cart-item-price">480 ₽</b>
+                  <button class="cart-item-button" type="button">
+                    <svg width="16" height="16" fill="#2d3440" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z"/>
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="cart-delimiter"></div>
+              <div class="cart-footer">
+                <button class="button button-red" type="button">Оформить заказ</button>
+                <span class="cart-summary">Итого:&nbsp;</span>
+                <span class="cart-total">790 ₽</span>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>

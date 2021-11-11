@@ -15,24 +15,26 @@
       <nav class="main-nav">
         <ul class="nav-site">
           <li class="site-item">
-            <a class="site-link" href="catalog.html">Каталог</a>
-            <ul class="sub-menu">
-              <li class="sub-item sub-promo">
-                <a class="sub-link" href="#">Новинки</a>
-              </li>
-              <li class="sub-item">
-                <a class="sub-link" href="#">Сливочное</a>
-              </li>
-              <li class="sub-item">
-                <a class="sub-link" href="#">Щербеты</a>
-              </li>
-              <li class="sub-item">
-                <a class="sub-link" href="#">Фруктовый лед</a>
-              </li>
-              <li class="sub-item">
-                <a class="sub-link" href="#">Мелорин</a>
-              </li>
-            </ul>
+            <a class="site-link" href="#">Каталог</a>
+            <div class="menu-wrapper">
+              <ul class="sub-menu">
+                <li class="sub-item sub-promo">
+                  <a class="sub-link" href="#">Новинки</a>
+                </li>
+                <li class="sub-item">
+                  <a class="sub-link" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="sub-item">
+                  <a class="sub-link" href="#">Щербеты</a>
+                </li>
+                <li class="sub-item">
+                  <a class="sub-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="sub-item">
+                  <a class="sub-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="site-item">
             <a class="site-link" href="#">Доставка и оплата</a>
@@ -49,15 +51,46 @@
             <a class="user-link user-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
+            <form class="search-form visually-hidden" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+              <input class="field" placeholder="Поиск по сайту" type="text" name="site-search" id="site-search">
+              <label>
+                <svg class="search-clear" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z"/>
+                </svg>
+                <input class="visually-hidden" type="reset" value="Стереть содержимое">
+              </label>
+              <button class="visually-hidden" type="submit">
+                Отправить
+              </button>
+            </form>
           </li>
           <li class="user-item">
             <a class="user-link user-login" href="#">Вход</a>
+            <form class="login-form visually-hidden" action="https://echo.htmlacademy.ru/" method="post">
+              <h2  class="login-title">Личный кабинет</h2>
+              <label class="visually-hidden" for="login-email">Логин</label>
+              <input class="field" placeholder="email@example.com" type="email" name="login-email" id="login-email" required>
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input class="field" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" type="password" name="login-password" id="login-password" required>
+              <div class="login-wrapper">
+                <button class="button button-red" type="submit">Войти</button>
+                <div class="links-wrapper">
+                  <a class="login-link" href="#">Забыли пароль?</a>
+                  <a class="login-link" href="#">Регистрация</a>
+                </div>
+              </div>
+            </form>
           </li>
           <li class="user-item">
             <a class="user-link user-cart" href="#">
               <span class="visually-hidden">Корзина: </span>
               Пусто
             </a>
+            <div class="cart-popover-empty visually-hidden">
+              <h2 class="visually-hidden">Корзина</h2>
+              <p class="cart-empty-text">Ваша корзина пока пуста</p>
+            </div>
           </li>
         </ul>
       </nav>
@@ -271,7 +304,14 @@
         <form class="delievery-form" action="https://echo.htmlacademy.ru/" method="post">
           <p  class="delievery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <p class="delievery-field-group delievery-form-date">
-            <label class="delievery-label" for="delievery-date">Дата</label>
+            <label class="delievery-label" for="delievery-date">
+              Дата
+              <span class="delievery-info">
+                <span class="visually-hidden">Дополнительная информация</span>
+                <span class="delievery-popup">Выберите желаемую дату доставки</span>
+
+              </span>
+            </label>
             <input class="field" type="text" id="delievery-date" name="delievery-date" placeholder="01.04.2020">
           </p>
           <p class="delievery-field-group delievery-form-phone">
@@ -279,7 +319,14 @@
             <input class="field" type="text" id="delievery-phone" name="delievery-phone" placeholder="+7 800 999-00-00">
           </p>
           <p class="delievery-field-group delievery-form-address">
-            <label class="delievery-label" for="delievery-address">Адрес</label>
+            <label class="delievery-label" for="delievery-address">
+              Адрес
+              <span class="delievery-info">
+                <span class="visually-hidden">Дополнительная информация</span>
+                <span class="delievery-popup">Введите название улицы, дома и квартиры</span>
+
+              </span>
+            </label>
             <input class="field" type="text" id="delievery-address" name="delievery-address" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
           <button class="button button-red" type="submit">Отправить</button>
@@ -362,5 +409,26 @@
         </p>
       </section>
     </footer>
+
+    <div class="modal-container modal-hidden">
+      <div class="modal-feedback">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <p class="modal-title">Мы обязательно ответим вам!</p>
+          <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
+            <input class="field feedback-field" placeholder="Имя и фамилия" type="text" name="feedback-name" id="feedback-name">
+            <label class="visually-hidden" for="feedback-email">Электронная почта</label>
+            <input class="field feedback-field"  placeholder="email@example.com" type="email" name="feedback-email" id="feedback-email" required>
+            <label class="visually-hidden" for="feedback-text">Ваш вопрос</label>
+            <textarea class="field feedback-textarea" placeholder="В свободной форме" name="feedback-text" id="feedback-text" rows="6" required></textarea>
+            <button class="button button-red" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
