@@ -51,23 +51,20 @@
             <a class="user-link user-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
-            <form class="search-form visually-hidden" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="search-form search-form-hidden" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-              <input class="field" placeholder="Поиск по сайту" type="text" name="site-search" id="site-search">
-              <label>
-                <svg class="search-clear" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <input class="field" placeholder="Поиск по сайту" type="search" name="site-search" id="site-search">
+              <button class="search-clear" type="reset">
+                <svg class="clear-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z"/>
                 </svg>
-                <input class="visually-hidden" type="reset" value="Стереть содержимое">
-              </label>
-              <button class="visually-hidden" type="submit">
-                Отправить
+                <span class="visually-hidden">"Стереть содержимое"></span>
               </button>
             </form>
           </li>
           <li class="user-item">
             <a class="user-link user-login" href="#">Вход</a>
-            <form class="login-form visually-hidden" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="login-form login-form-hidden" action="https://echo.htmlacademy.ru/" method="post">
               <h2  class="login-title">Личный кабинет</h2>
               <label class="visually-hidden" for="login-email">Логин</label>
               <input class="field" placeholder="email@example.com" type="email" name="login-email" id="login-email" required>
@@ -87,7 +84,7 @@
               <span class="visually-hidden">Корзина </span>
               2 товара
             </a>
-            <div class="cart-popover visually-hidden">
+            <div class="cart-popover cart-popover-closed">
               <h2 class="cart-title">Корзина</h2>
               <ul class="cart-list">
                 <li class="cart-item">
@@ -167,13 +164,13 @@
                 <label class="catalog-filter-label">
                   <span class="catalog-price-separator"> - </span>
                   <span class="visually-hidden">до</span>
-                  <input class="range-input" type="number" value="500" name="max-price"> ₽
+                  <input class="range-input" type="number" value="500" name="max-price">&nbsp;₽
                 </label>
               </div>
 
               <div class="range-container">
                 <div class="range-scale">
-                  <div class="range-bar" style="margin-left: 30px; width: 56px">
+                  <div class="range-bar" style="margin-left: 32px; width: 72px">
                     <button class="range-toggle" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
@@ -218,7 +215,7 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Наполнители:</legend>
-            <ul class="catalog-filter-list">
+            <ul class="catalog-filter-list catalog-fillers-list">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
@@ -325,7 +322,7 @@
           <li class="product-card">
             <img class="product-card-image" src="img/blueberry-ball.jpg" alt="Шарик крем-брюле, политый черничным джемом" width="168" height="168">
             <h3 class="product-card-title">Черника</h3>
-            <p class="product-card-description">Крем-брюле с черничным джемом</p>
+            <p class="product-card-description">Крем-брюле<br>с черничным джемом</p>
             <b class="product-card-price">330 ₽/кг</b>
             <a class="product-card-button" href="#">
               <svg class="product-card-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -337,7 +334,7 @@
           <li class="product-card">
             <img class="product-card-image" src="img/bubble-gum-ball.jpg" alt="Шарик мороженого небесного цвета с разноцветной посыпкой" width="168" height="168">
             <h3 class="product-card-title">Бабл-гам</h3>
-            <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
+            <p class="product-card-description">Ванильный пломбир<br>со сладкой посыпкой</p>
             <b class="product-card-price">320 ₽/кг</b>
             <a class="product-card-button" href="#">
               <svg class="product-card-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -361,7 +358,7 @@
           <li class="product-card">
             <img class="product-card-image" src="img/banana-ball.jpg" alt="Шарик нежного сливочного мороженого бананового цвета" width="168" height="168">
             <h3 class="product-card-title">Банан</h3>
-            <p class="product-card-description">Сливочный пломбир с банановым вкусом</p>
+            <p class="product-card-description">Сливочный пломбир<br>с банановым вкусом</p>
             <b class="product-card-price">340 ₽/кг</b>
             <a class="product-card-button" href="#">
               <svg class="product-card-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -385,7 +382,7 @@
           <li class="product-card">
             <img class="product-card-image" src="img/strawberry-ball.jpg" alt="Шарик нежно-розового клубничного мороженого" width="168" height="168">
             <h3 class="product-card-title">Клубничка</h3>
-            <p class="product-card-description">Сливочный пломбир с клубничным вкусом</p>
+            <p class="product-card-description">Сливочный пломбир<br>с клубничным вкусом</p>
             <b class="product-card-price">300 ₽/кг</b>
             <a class="product-card-button" href="#">
               <svg class="product-card-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -409,7 +406,7 @@
           <li class="product-card">
             <img class="product-card-image" src="img/menthol-ball.jpg" alt="Шарик светло-голубого ментолового мороженого" width="168" height="168">
             <h3 class="product-card-title">Ментол</h3>
-            <p class="product-card-description">Сливочный пломбир с ментоловым сиропом</p>
+            <p class="product-card-description">Сливочный пломбир<br>с ментоловым сиропом</p>
             <b class="product-card-price">320 ₽/кг</b>
             <a class="product-card-button" href="#">
               <svg class="product-card-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -433,7 +430,7 @@
           <li class="product-card">
             <img class="product-card-image" src="img/creme-brulee-ball.jpg" alt="Шарик классического крем-брюле" width="168" height="168">
             <h3 class="product-card-title">Крем-брюле</h3>
-            <p class="product-card-description">Классическое крем-брюле</p>
+            <p class="product-card-description">Классическое<br>крем-брюле</p>
             <b class="product-card-price">280 ₽/кг</b>
             <a class="product-card-button" href="#">
               <svg class="product-card-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

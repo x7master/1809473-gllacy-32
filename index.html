@@ -51,23 +51,20 @@
             <a class="user-link user-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
-            <form class="search-form visually-hidden" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="search-form search-form-hidden" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-              <input class="field" placeholder="Поиск по сайту" type="text" name="site-search" id="site-search">
-              <label>
-                <svg class="search-clear" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <input class="field" placeholder="Поиск по сайту" type="search" name="site-search" id="site-search">
+              <button class="search-clear" type="reset">
+                <svg class="clear-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z"/>
                 </svg>
-                <input class="visually-hidden" type="reset" value="Стереть содержимое">
-              </label>
-              <button class="visually-hidden" type="submit">
-                Отправить
+                <span class="visually-hidden">"Стереть содержимое"></span>
               </button>
             </form>
           </li>
           <li class="user-item">
             <a class="user-link user-login" href="#">Вход</a>
-            <form class="login-form visually-hidden" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="login-form login-form-hidden" action="https://echo.htmlacademy.ru/" method="post">
               <h2  class="login-title">Личный кабинет</h2>
               <label class="visually-hidden" for="login-email">Логин</label>
               <input class="field" placeholder="email@example.com" type="email" name="login-email" id="login-email" required>
@@ -87,7 +84,7 @@
               <span class="visually-hidden">Корзина: </span>
               Пусто
             </a>
-            <div class="cart-popover-empty visually-hidden">
+            <div class="cart-popover-empty cart-popover-closed">
               <h2 class="visually-hidden">Корзина</h2>
               <p class="cart-empty-text">Ваша корзина пока пуста</p>
             </div>
@@ -192,12 +189,12 @@
         <h2 class="promo-title">Заказывайте мороженое<br>и получайте подарки!</h2>
         <div class="promo-item promo-strawberry">
           <h3 class="promo-item-title">Малинка даром!</h3>
-          <p class="promo-text">При покупке 2 кг любого фруктового<br>мороженого, добавим в ваш заказ банку<br>малинового варенья бесплатно.</p>
+          <p class="promo-text">При покупке 2 кг любого фруктового<br>мороженого добавим в ваш заказ банку<br>малинового варенья бесплатно.</p>
           <a href="catalog.html" class="button button-white">Хочу подарок</a>
         </div>
         <div class="promo-item promo-marshmallow">
           <h3 class="promo-item-title">Маршмеллоу даром!</h3>
-          <p class="promo-text">При покупке 2 кг пломбира, добавим<br>в ваш заказ упаковку нежных<br>зефирок совершенно бесплатно.</p>
+          <p class="promo-text">При покупке 2 кг пломбира добавим<br>в ваш заказ упаковку нежных<br>зефирок совершенно бесплатно.</p>
           <a href="catalog.html" class="button button-white">Хочу подарок</a>
         </div>
       </section>
@@ -261,7 +258,7 @@
           <h2 class="features-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
           <ul class="features-list">
             <li class="features-item features-production">
-              Все наше мороженое изгатавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+              Все наше мороженое изгатавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.
             </li>
             <li class="features-item features-suppliers">
               Закупка ингредиентов производится только<br>у проверенных фермерских хозяйств, с которыми<br>нас связывает долговременное сотрудничество.
@@ -284,7 +281,7 @@
         <section class="subscription">
           <h2 class="visually-hidden">Сладкая рассылка</h2>
           <div class="subscription-container">
-            <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда<br>в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="subscription-email">Email</label>
               <input class="field" placeholder="email@example.com" type="email" name="subscription-email" id="subscription-email" required>
@@ -302,7 +299,7 @@
           <p class="delievery-text">Хочется полакомиться любимым дессертом,<br>но нет времени съездить в магазин? Закажите<br>доставку мороженого на дом и курьер<br>привезет вам ваш заказ в течение часа!</p>
         </div>
         <form class="delievery-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p  class="delievery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p  class="delievery-form-text">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.</p>
           <p class="delievery-field-group delievery-form-date">
             <label class="delievery-label" for="delievery-date">
               Дата
@@ -338,7 +335,7 @@
           <h2 class="visually-hidden">Контакты</h2>
           <dl class="contacts-list">
               <dt class="contacts-item">Адрес главного офиса<br> и офлайн-магазина:</dt>
-              <dd class="contacts-description contacts-address">наб. Реки Карповки,<br>5 лит П, Санкт-Петербург</dd>
+              <dd class="contacts-description contacts-address">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</dd>
               <dt class="contacts-item">Для заказов по телефону:</dt>
               <dd class="contacts-description">
                 <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
