@@ -89,7 +89,7 @@ body {
   outline: 4px solid;
   border-radius: 26px;
   border: none;
-  box-shadow: 0px 8px 12px rgba(45, 52, 64, 0.1);
+  box-shadow: 0 8px 12px rgba(45, 52, 64, 0.1);
   cursor: pointer;
 }
 
@@ -153,10 +153,6 @@ body {
   color: var(--basic-extra-dark);
   border: 1px solid var(--basic-neutral);
   border-radius: 4px;
-}
-
-.field::placeholder {
-  color: var(--basic-neutral);
 }
 
 .field:hover,
@@ -249,7 +245,7 @@ body {
   padding: 10px 0 10px 0;
   background-color: var(--basic-extra-light);
   border-radius: 4px;
-  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
 }
 
 .site-link,
@@ -371,7 +367,7 @@ body {
   padding: 24px 16px;
   border-radius: 4px;
   background-color: var(--basic-extra-light);
-  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
 }
 
 .search-form .field {
@@ -424,7 +420,7 @@ body {
   padding: 48px 48px 52px 48px;
   background-color: var(--basic-extra-light);
   border-radius: 4px;
-  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
 .login-title {
@@ -489,7 +485,7 @@ body {
 }
 
 .cart-popover-empty {
-  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
 }
 
 .cart-popover {
@@ -498,7 +494,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: var(--basic-extra-dark);
-  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
 .cart-popover-closed {
@@ -550,9 +546,6 @@ body {
 .cart-item-title {
   grid-column: 2 / 3;
   margin: 0;
-}
-
-.cart-item-title {
   font-size: inherit;
 }
 
@@ -689,6 +682,7 @@ body {
 
 .slider-image {
   transform: scale(0.31);
+  position: relative;
 }
 
 .slider-image-item::before {
@@ -726,10 +720,6 @@ body {
   opacity: 1;
   margin-right: 62px;
   width: 306px;
-}
-
-.slider-image {
-  position: relative;
 }
 
 .slider-pagination {
@@ -1190,7 +1180,7 @@ body {
   padding: 40px 40px 41px 40px;
   background-color: var(--basic-extra-light);
   border-radius: 8px;
-  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
 .delievery-form-text {
@@ -1252,7 +1242,7 @@ body {
   border: 1px solid var(--basic-neutral);
   border-radius: 1px;
   background-color: var(--basic-extra-light);
-  box-shadow: 0px 4px 8px rgba(194, 194, 194, 0.2);
+  box-shadow: 0 4px 8px rgba(194, 194, 194, 0.2);
 }
 
 .delievery-popup::before {
@@ -1426,7 +1416,7 @@ body {
   width: 570px;
   background-color: var(--basic-extra-light);
   border-radius: 8px;
-  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
 .modal-close-button {
@@ -1697,6 +1687,8 @@ body {
 
 .control-input[type="radio"] + .control-label::before {
   content: "";
+  border: 1px solid var(--basic-extra-dark);
+  border-radius: 50%;
 }
 
 .control-input[type="radio"] + .control-label::before,
@@ -1706,11 +1698,6 @@ body {
   left: 0;
   width: 16px;
   height: 16px;
-}
-
-.control-input[type="radio"] + .control-label::before {
-  border: 1px solid var(--basic-extra-dark);
-  border-radius: 50%;
 }
 
 .control:hover .control-label::before {
@@ -1769,16 +1756,6 @@ body {
 
 .control-input:checked + .checkbox-icon .check-on {
   display: inline;
-}
-
-.catalog-filter-item + .catalog-filter-item {
-  margin-left: 16px;
-}
-
-.control {
-  position: relative;
-  display: block;
-  padding-left: 24px;
 }
 
 .catalog-filter-button {
