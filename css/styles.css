@@ -196,9 +196,9 @@ body {
 }
 
 .page-header {
+  display: flex;
   width: 1170px;
   margin: 0 auto;
-  display: flex;
   align-items: center;
   padding: 22px 0;
   line-height: 20px;
@@ -228,10 +228,10 @@ body {
 }
 
 .menu-wrapper {
-  display: none;
   position: absolute;
-  padding-top: 8px;
   z-index: 10;
+  display: none;
+  padding-top: 8px;
   min-width: 138px;
 }
 
@@ -375,10 +375,10 @@ body {
 }
 
 .search-clear {
-  display: none;
   position: absolute;
   top: 28px;
   right: 17px;
+  display: none;
   margin: 0;
   padding: 12px;
   border: none;
@@ -620,12 +620,12 @@ body {
 }
 
 .slider {
-  padding-top: 21px;
-  margin-bottom: 80px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 21px;
+  margin-bottom: 80px;
 }
 
 .slider-list {
@@ -648,9 +648,9 @@ body {
 }
 
 .slider-text-item {
+  display: none;
   padding-left: 70px;
   padding-right: 40px;
-  display: none;
 }
 
 .slider-text-current {
@@ -681,15 +681,15 @@ body {
 }
 
 .slider-image {
-  transform: scale(0.31);
   position: relative;
+  transform: scale(0.31);
 }
 
 .slider-image-item::before {
   content: "";
   position: absolute;
-  display: block;
   top: 206px;
+  display: block;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -699,9 +699,9 @@ body {
 .image-item-current::before {
   content: "";
   position: absolute;
-  display: block;
   top: 99px;
   left: 0;
+  display: block;
   width: 312px;
   height: 312px;
   border-radius: 50%;
@@ -723,10 +723,10 @@ body {
 }
 
 .slider-pagination {
-  margin: 0;
-  padding: 0;
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .slider-pagination-item + .slider-pagination-item {
@@ -1227,11 +1227,11 @@ body {
 }
 
 .delievery-popup {
-  display: none;
   position: absolute;
   z-index: 10;
   top: -10px;
   left: 24px;
+  display: none;
   width: max-content;
   max-width: 170px;
   padding: 10px 8px 10px 15px;
@@ -1364,10 +1364,10 @@ body {
 
 .nav-item-featured::before {
   content: "";
-  display: block;
   position: absolute;
   top: 22%;
   left: -23px;
+  display: block;
   width: 16px;
   height: 16px;
   background-image: url("../img/heart-icon.svg");
