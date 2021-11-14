@@ -625,7 +625,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   padding-top: 21px;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
 .slider-list {
@@ -809,9 +809,10 @@ body {
 }
 
 .social-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  display: flex;
   list-style: none;
 }
 
@@ -861,13 +862,13 @@ body {
 .promo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
-  margin-bottom: 80px;
+  gap: 30px;
+  margin-bottom: 81px;
 }
 
 .promo-title {
   grid-column: 1 / -1;
-  margin: 0 auto 56px auto;
+  margin: 0 auto 26px auto;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -876,7 +877,7 @@ body {
 }
 
 .promo-item {
-  padding: 40px 200px 40px 40px;
+  padding: 40.5px 200px 40px 40px;
   background-color: var(--special-neutral);
   border-radius: 16px;
   background-repeat: no-repeat;
@@ -912,7 +913,7 @@ body {
 }
 
 .popular-title {
-  margin: 0 auto 56px auto;
+  margin: 0 auto 57px auto;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -979,7 +980,7 @@ body {
 .product-card-button {
   height: 32px;
   width: 32px;
-  margin-top: -3px;
+  margin-top: -4px;
   margin-left: auto;
   padding: 8px;
   background-color: var(--special-extra-bright);
@@ -1020,11 +1021,10 @@ body {
 }
 
 .features {
-  margin-bottom: 80px;
+  margin-bottom: 81px;
   padding: 24px;
   background-color: #fcc850;
   background-image: url("../img/waffle-background.jpg");
-  background-repeat: no-repeat;
   border-radius: 16px;
 }
 
@@ -1087,7 +1087,7 @@ body {
 .content-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
+  gap: 30px;
   margin-bottom: 76px;
 }
 
@@ -1096,6 +1096,7 @@ body {
   border-radius: 16px;
   background-color: var(--basic-extra-light);
   background-image: url("../img/blog-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -1123,6 +1124,7 @@ body {
   background-color: var(--basic-extra-light);
   background-image: url("../img/post-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .subscription-container {
@@ -1154,6 +1156,7 @@ body {
   background-color: var(--basic-extra-light);
   background-image: url("../img/delievery-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
 }
 
@@ -1275,6 +1278,7 @@ body {
   background-color: var(--basic-extra-light);
   background-image: url("../img/contacts-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
 }
 
@@ -1285,13 +1289,17 @@ body {
   border-radius: 8px;
 }
 
+.contacts-container .button {
+  padding: 13px 32px;
+}
+
 .contacts-list {
   margin: 0;
   margin-bottom: 32px;
 }
 
 .contacts-item {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 
 .contacts-description {
@@ -1532,7 +1540,7 @@ body {
   align-items: flex-end;
   gap: 16px 24px;
   flex-wrap: wrap;
-  width: 810px;
+  max-width: 810px;
 }
 
 .catalog-filter-group {
@@ -1544,6 +1552,10 @@ body {
   border: none;
 }
 
+.catalog-filter-sorting {
+  width: 196px;
+}
+
 .catalog-filter-title {
   display: inline-block;
   padding-left: 16px;
@@ -1552,7 +1564,9 @@ body {
 
 .sorting-control {
   display: block;
-  padding: 8px 63px 8px 16px;
+  width: 100%;
+  padding: 8px 28px 8px 16px;
+  -moz-padding-start: 12px;
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -1565,6 +1579,8 @@ body {
   background-repeat: no-repeat;
   background-position: right 15px center;
   cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -1665,6 +1681,8 @@ body {
   margin: 0;
   padding: 8px 16px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   list-style: none;
   border-radius: 20px;
   background-color: var(--basic-light-transparent);
@@ -1672,10 +1690,6 @@ body {
 
 .catalog-fillers-list .catalog-filter-item:nth-child(2) {
   margin-right: 10px;
-}
-
-.catalog-filter-item + .catalog-filter-item {
-  margin-left: 16px;
 }
 
 .control {
@@ -1790,7 +1804,7 @@ body {
 }
 
 .main-catalog .product-list {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .pagination-container {
@@ -1808,6 +1822,7 @@ body {
 .pagination {
   justify-self: right;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
