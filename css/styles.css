@@ -877,7 +877,7 @@ body {
 }
 
 .promo-item {
-  padding: 40.5px 200px 40px 40px;
+  padding: 40px 200px 40px 40px;
   background-color: var(--special-neutral);
   border-radius: 16px;
   background-repeat: no-repeat;
@@ -913,7 +913,7 @@ body {
 }
 
 .popular-title {
-  margin: 0 auto 57px auto;
+  margin: 0 auto 56px auto;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -1833,7 +1833,7 @@ body {
 }
 
 .pagination-item + .pagination-item {
-  margin-left: 2.5px;
+  margin-left: 3px;
 }
 
 .pagination-item:last-child {
@@ -1846,11 +1846,12 @@ body {
 }
 
 .pagination-link {
+  display: block;
   width: 24px;
   height: 24px;
-  display: block;
+  padding-top: 2px;
   text-align: center;
-  line-height: 24px;
+  line-height: 20px;
   text-decoration: none;
   color: var(--basic-extra-dark);
   border-radius: 50%;
